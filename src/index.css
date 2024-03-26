@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shade {
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.cardItem {
+  @apply grid justify-center md:justify-between gap-y-8 gap-x-16;
+
+  @apply mt-8 sm:mt-0 px-8;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
